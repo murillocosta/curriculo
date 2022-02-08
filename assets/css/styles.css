@@ -66,6 +66,8 @@ p {
     margin: 0;
 }
 
+h1,
+h2,
 h3 {
     color: var(--title-color);
     font-weight: var(--font-medium);
@@ -79,7 +81,6 @@ ul {
 a {
     text-decoration: none;
     color: var(--text-color)
-
 }
 
 img {
@@ -91,7 +92,8 @@ img:hover {
     transform: scale(1.3);
     transition: 1.5s;
 }
-img:not( :hover ){
+
+img:not( :hover) {
     transform: scale(1);
     transition: 1.5s;
 }
@@ -135,9 +137,10 @@ img:not( :hover ){
     z-index: var(--z-fixed);
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+    background-color: var(--body-color);
 }
 
-nav {
+.nav {
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -145,6 +148,11 @@ nav {
 }
 
 .nav__logo,
+.nav__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
 .nav__toggle {
     font-size: 1.2rem;
     cursor: pointer;
@@ -186,7 +194,8 @@ nav {
         border-radius: 1rem 1rem 0 0;
         z-index: var(--z-fixed);
         transition: 0.3s;
-    }
+        }
+    
 }
 
 .home {
@@ -232,7 +241,6 @@ nav {
     align-items: center;
     font-size: var(--small-font-size);
     row-gap: 10px;
-    justify-content: flex-start;
     
 }
 
@@ -260,7 +268,7 @@ nav {
     font-size: 2rem;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-    
+
 }
 
 .bxl-linkedin-square:hover {
@@ -269,7 +277,7 @@ nav {
     transition: 0.8s;
 }
 
-.bxl-github:hover{
+.bxl-github:hover {
     color: black;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.356);
     transition: 0.8s;
@@ -281,7 +289,7 @@ nav {
     transition: 0.8s;
 }
 
-.bxl-twitter:hover{
+.bxl-twitter:hover {
     color: #1e9bf0;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.356);
     transition: 0.8s;
@@ -293,7 +301,7 @@ nav {
 }
 
 .education__content,
-.experience__content{
+.experience__content {
     display: flex;
 }
 
@@ -316,33 +324,33 @@ nav {
     border-radius: 50%;
     margin-top: 0.25rem;
     box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.438);
-  }
+}
 
 .experience__line,
 .education__line {
     background-color: var(--text-color-light);
     display: block;
     width: 2px;
-    height: 108%;
+    height: 112%;
     transform: translate(7px, 0);
     box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.438);
 }
 
-.experience__line{
-    height: 106%;
-}
+
 
 .education__data,
 .experience__data {
     gap: 0.5rem;
 }
 
-.education__title, .experience__title {
+.education__title,
+.experience__title {
     font-size: var(--h3-font-size);
     font-weight: 550;
 }
 
-.education__studies, .experience__company {
+.education__studies,
+.experience__company {
     font-size: var(--small-font-size);
     color: var(--title-color);
 }
@@ -354,22 +362,29 @@ nav {
 .skills__content {
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
-        
+
 }
 
-.skills__name, .language__name {
+
+
+.skills__name,
+.language__name {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-3);
 }
 
-.skills__circle {
+.skills__circle, .language__circle {
     display: inline-block;
     width: 5px;
     height: 5px;
     background-color: var(--text-color);
     border-radius: 50%;
     margin-right: 0.75rem;
+}
+
+.language__content {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .experience__description {
@@ -391,39 +406,63 @@ nav {
 
 
 /*resumos esquerda e direita*/
+@media screen and (min-width: 968px) {
+    body {
+        margin: 3rem 0;
+    }
 
-.resume {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    background-color: var(--container-color);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
+    .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.resume__left {
-    background-color: var(--container-color-alt);
-}
+    .l-header,
+    .scrolltop {
+        display: none;
+    }
 
-.resume__left, .resume__right {
-    padding: 0 1.5rem;
-}
+    .resume {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
 
-.section-title {
-    text-align: initial;
-}
+    .resume__left {
+        background-color: var(--container-color-alt);
+    }
 
-.home__container {
-    gap: 1.5rem;
+    .resume__left,
+    .resume__right {
+        padding: 0 1.5rem;
+    }
+
+    .section-title {
+        text-align: initial;
+    }
+
+    .home__container {
+        gap: 1.5rem;
+    }
+
+    .interests__container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: var(--mb-2);
+    }
 }
 
 .interests__container {
     grid-template-columns: repeat(3, 1fr);
     margin-top: var(--mb-2);
+    justify-content: space-evenly;
 }
+
 
 .interests__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .interests__icons {
@@ -458,33 +497,38 @@ nav {
 
 .scrolltop_icon {
     font-size: 20px;
- }
+}
 
- .music:hover {
+.music:hover {
     color: blue;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.349);
     transition: 0.8s;
- }
+}
 
- .gaming:hover {
+.gaming:hover {
     color: purple;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.349);
     transition: 0.8s;
- }
+}
 
- .camping:hover {
+.camping:hover {
     color: brown;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.349);
     transition: 0.8s;
- }
+}
 
- .hiking:hover {
+.hiking:hover {
     color: green;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.349);
     transition: 0.8s;
- }
+}
 
- .interests__name:hover {
+.interests__name:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
     transition: 0.8s;
+}
+
+.interests__container {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 3rem;
 }

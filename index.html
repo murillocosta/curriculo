@@ -10,12 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/
-</head>
-
-<body>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/
+        </head> <body>
     <header class="l-header">
-        <nav class="bd-container">
+        <nav class="nav bd-container">
             <a href="#" class="nav__logo">Murillo de Alencar</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -64,6 +63,10 @@
                 </ul>
 
             </div>
+            <!--Adiciona toggle da nav-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
         </nav>
     </header>
 
@@ -82,10 +85,12 @@
                     </div>
                     <address class="home__address bd-grid">
                         <span class="home__information">
-                            <i class="bx bx-map home__icon">Salvador/Bahia - Brazil</i></span>
+                            <i class="bx bx-map home__icon"><a href="https://www.google.com/maps/place/Salvador,+BA/@-12.9017277,-38.5601919,11z/data=!3m1!4b1!4m5!3m4!1s0x716112050422ebd:0xf71c84369573db9d!8m2!3d-12.9777378!4d-38.5016363" target="_blank">&nbspSalvador/Bahia - Brazil</a></i></span>
                         <span class="home__information">
-                            <i class="bx bx-envelope home__icon"><a href="mailto:murillo.costa@live.com">murillo.costa@live.com</a></i></span>
-                        <span class="home__information"><i class="bx bx-phone home__icon"><a href="tel:+5571983564803">+55 (71) 98356-4803</a></i>
+                            <i class="bx bx-envelope home__icon"><a
+                                    href="mailto:murillo.costa@live.com">&nbsp&nbspmurillo.costa@live.com</a></i></span>
+                        <span class="home__information"><i class="bx bx-phone home__icon"><a
+                                    href="tel:+5571983564803">&nbsp&nbsp+55 (71) 98356-4803</a></i>
                         </span>
                     </address>
                 </section>
@@ -188,9 +193,11 @@
                     <h2 class="section-title">Languages</h2>
                     <div class="language__content bd-grid">
                         <ul class="language__data">
-                            <li class="language__name"><span class="skills__circle"></span>Portuguese - Native Language</li>
-                            <li class="language__name"><span class="skills__circle"></span>English</li>
-                            <li class="language__name"><span class="skills__circle"></span>Spanish</li>
+                            <li class="language__name"><span class="language__circle"></span>Portuguese
+                            </li>
+                            <li class="language__name"><span class="language__circle"></span>English</li></ul>
+                            <ul class="language__data">
+                            <li class="language__name"><span class="language__circle"></span>Spanish</li>
                         </ul>
                     </div>
                 </section>
@@ -209,22 +216,31 @@
 
                             <div class="experience__data bd-grid">
                                 <h3 class="experience__title">Licenciatura em Ciências Biológicas - Estágio</h3>
-                                <span class="experience__company">2018-2019 | Programa Institucional de Bolsas de Iniciação à
+                                <span class="experience__company">2018-2019 | Programa Institucional de Bolsas de
+                                    Iniciação à
                                     Docência</span>
-                                <span class="experience__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, nisi adipisci aperiam hic dolores reiciendis beatae asperiores veniam nemo quis quo molestiae voluptatum voluptatibus ducimus sunt voluptates tempore accusamus porro!</span>
+                                <span class="experience__description">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Mollitia, nisi adipisci aperiam hic dolores reiciendis beatae
+                                    asperiores veniam nemo quis quo molestiae voluptatum voluptatibus ducimus sunt
+                                    voluptates tempore accusamus porro!</span>
                             </div>
                         </div>
 
                         <div class="experience__content">
                             <div class="experience__time">
                                 <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
+                                
                             </div>
                             <div class="experience__data bd-grid">
-                            <h3 class="experience__title">Licenciatura em Ciências Biológicas - Estágio</h3>
-                            <span class="experience__company">2018-2019 | Programa Institucional de Bolsas de Iniciação à
-                                Docência</span>
-                            <span class="experience__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, nisi adipisci aperiam hic dolores reiciendis beatae asperiores veniam nemo quis quo molestiae voluptatum voluptatibus ducimus sunt voluptates tempore accusamus porro!</span></div>
+                                <h3 class="experience__title">Licenciatura em Ciências Biológicas - Estágio</h3>
+                                <span class="experience__company">2018-2019 | Programa Institucional de Bolsas de
+                                    Iniciação à
+                                    Docência</span>
+                                <span class="experience__description">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Mollitia, nisi adipisci aperiam hic dolores reiciendis beatae
+                                    asperiores veniam nemo quis quo molestiae voluptatum voluptatibus ducimus sunt
+                                    voluptates tempore accusamus porro!</span>
+                            </div>
                         </div>
                 </section>
                 <!--Fim de experiences-->
@@ -237,7 +253,9 @@
                                 AWS Cloud Pratictioner | 2020
                             </h3>
                             <p class="certificate__description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nisi officiis blanditiis ut modi provident vitae hic labore a excepturi odit magnam nostrum, temporibus quibusdam? Enim quos dolorem totam culpa.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nisi officiis
+                                blanditiis ut modi provident vitae hic labore a excepturi odit magnam nostrum,
+                                temporibus quibusdam? Enim quos dolorem totam culpa.
                             </p>
                         </div>
                         <div class="certificate__content">
@@ -245,7 +263,9 @@
                                 AWS Cloud Pratictioner | 2020
                             </h3>
                             <p class="certificate__description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nisi officiis blanditiis ut modi provident vitae hic labore a excepturi odit magnam nostrum, temporibus quibusdam? Enim quos dolorem totam culpa.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nisi officiis
+                                blanditiis ut modi provident vitae hic labore a excepturi odit magnam nostrum,
+                                temporibus quibusdam? Enim quos dolorem totam culpa.
                             </p>
                         </div>
                     </div>
@@ -280,13 +300,13 @@
 
             </div>
             <!--Fim do grid branco-->
-            </div>
+        </div>
     </main>
 
     <!--scroll top-->
     <a href="#" class='scrolltop' id="scroll-top">
         <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
     </a>
-</body>
+    </body>
 
 </html>

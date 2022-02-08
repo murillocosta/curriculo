@@ -1,2 +1,2 @@
-# curriculo
-Currículo Murillo de Alencar / Web FullStack
+# Currículo - Murillo de Alencar 
+###  Fullstack Developer
